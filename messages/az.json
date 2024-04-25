@@ -5,7 +5,8 @@
   },
   "Index": {
     "main": "Ev",
-    "products": "Məhsullar",
+    "techService": "Məhsullar",
+    "models": "Modeller",
     "service": "Xidmətə qulluq",
     "leasing": "Lizinq",
     "about": "Biz haqqında",

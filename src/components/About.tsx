@@ -2,7 +2,10 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className='flex flex-col items-center gap-10 max-w-[1850px] mx-auto mt-10'>
+    <section
+      id='about'
+      className='flex flex-col items-center gap-10 max-w-[1850px] mx-auto mt-10'
+    >
       <h2 className='font-bold text-2xl'>O нас</h2>
       <div>
         Команда «ARION», Азербайджан работает на рынке сервисных услуг,

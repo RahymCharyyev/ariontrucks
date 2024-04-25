@@ -8,7 +8,11 @@ const Footer = () => {
         <Link href='/'>
           <Image src='/arion.png' alt='arion logo' width={100} height={25} />
         </Link>
-        <p className='text-white'>Почта для связи: ariontrucksaz@inbox.ru</p>
+        <div>
+          <p className='text-white'>Связаться с нами:</p>
+          <p className='text-white'>Почта: ariontrucksaz@inbox.ru</p>
+          <p className='text-white'>Телефон: +994 55 2982929</p>
+        </div>
       </div>
       <p className='text-white text-center'>
         Все права защищены © {new Date().getFullYear()}

@@ -8,18 +8,21 @@ const Header = () => {
   return (
     <header className='py-5 px-10 flex items-center justify-between bg-[#00204a]'>
       <Link href='/'>
-        <Image src='/arion.png' alt='arion logo' width={100} height={25} />
+        <Image src='/arion.png' alt='arion logo' width={150} height={35} />
       </Link>
       <nav className='flex gap-4 text-white'>
         <Link className='hover:underline' href='/'>
           {t('main')}
         </Link>
+        <Link className='hover:underline' href='#models'>
+          {t('models')}
+        </Link>
         <Link className='hover:underline' href='#techService'>
-          {t('products')}
+          {t('techService')}
         </Link>
-        <Link className='hover:underline' href='#service'>
+        {/* <Link className='hover:underline' href='#service'>
           {t('service')}
-        </Link>
+        </Link> */}
         <Link className='hover:underline' href='#leasing'>
           {t('leasing')}
         </Link>

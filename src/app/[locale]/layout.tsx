@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 import { getTranslations } from 'next-intl/server';
 import Footer from '@/components/Footer';
+import BackTop from 'antd/es/float-button/BackTop';
 
 export async function generateMetadata({ params: { locale } }: any) {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <BackTop type='primary' />
         <Footer />
       </body>
     </html>

@@ -6,7 +6,7 @@ const { TextArea } = Input;
 const Contacts = () => {
   const [form] = Form.useForm();
   return (
-    <section className='flex flex-col items-center my-10'>
+    <section id='contacts' className='flex flex-col items-center my-10'>
       <h2 className='text-3xl font-bold text-center mb-5'>Отправить заявку</h2>
       <Form
         form={form}
