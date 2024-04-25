@@ -8,8 +8,8 @@ const Hero = () => {
       </h1>
       <Image
         className='rounded-xl'
-        src='/slider_5.webp'
-        alt='slider 1 photo'
+        src='/arion.png'
+        alt='Arion logo'
         width={700}
         height={300}
       />

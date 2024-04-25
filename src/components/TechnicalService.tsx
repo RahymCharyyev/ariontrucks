@@ -9,8 +9,8 @@ const TechnicalService = () => {
       <h2 className='text-center text-3xl font-bold'>
         Техническое обслуживание в центре «ARION»
       </h2>
-      <div className='flex justify-between'>
-        <div>
+      <div className='flex flex-wrap justify-between'>
+        <div className='flex-1'>
           <p>
             Вы можете произвести ремонт и техническое обслуживание на выгодных
             условиях! Специалисты нашего сервисного центра обладают огромным
