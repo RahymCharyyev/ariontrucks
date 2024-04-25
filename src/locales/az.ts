@@ -9,4 +9,42 @@ export default {
   leasing: 'Lizinq',
   about: 'Biz haqqında',
   contacts: 'Kontaktlar',
+  welcomeTitle: 'ARION şirkətinin rəsmi saytına xoş gəlmisiniz',
+  techServiceTitle: 'ARION mərkəzində texniki qulluq',
+  techServiceText:
+    'Siz sərfəli şərtlərlə təmir və texniki xidmət göstərə bilərsiniz! Xidmət mərkəzimizin mütəxəssisləri böyük təcrübəyə və yüksək ixtisasa malikdirlər ki, bu da bizə yüksək keyfiyyətli texniki xidmət göstərməyə, vaxtınıza və pulunuza qənaət etməyə imkan verir.',
+  techServiceFirstSubtitle:
+    'ARION avtomobilləri üçün əsas texniki xidmət işlərinin siyahısı:',
+  techServiceSecondSubtitle: 'Əlavə işlərin siyahısı:',
+  techServiceFirstList1:
+    '- Mühərrik yağının və mühərrik filtrinin dəyişdirilməsi',
+  techServiceFirstList2: '- Bütün yanacaq filtri elementlərinin dəyişdirilməsi',
+  techServiceFirstList3: '- Hava filtri elementinin dəyişdirilməsi',
+  techServiceFirstList4: '- Karbamid filtr elementinin dəyişdirilməsi',
+  techServiceFirstList5: '- Hava qurutma kartuşunun dəyişdirilməsi',
+  techServiceFirstList6: '- Kabin filtri, dəyişdirilməsi',
+  techServiceFirstList7: '- Avtomobilin Müayinəsi',
+  techServiceFirstList8: '- Şassinin yağlama yerlərinin yağla doldurulması',
+  techServiceSecondList1: '- Soyuducu suyun dəyişdirilməsi',
+  techServiceSecondList2: '- Mühərrik klapanının təmizlənməsinin tənzimlənməsi',
+  techServiceSecondList3: '- Sürət qutusu yağının dəyişdirilməsi',
+  techServiceSecondList4:
+    '- Sürət qutusu gecikdirici filtr elementinin dəyişdirilməsi',
+  techServiceSecondList5: '- Ön hub yağının dəyişdirilməsi',
+  techServiceSecondList6: '- Sükan yağının və filtr elementinin dəyişdirilməsi',
+  techServiceSecondList7: '- Debriyaj əyləc mayesinin dəyişdirilməsi',
+  techServiceSecondList8: '- Sürücü oxu yağının dəyişdirilməsi',
+  leasingText:
+    'Lizinq minimum kapital qoyuluşu ilə avadanlıqları idarə etmək və biznesin inkişafı üçün pula qənaət etmək imkanı verir. Biz sizə əlverişli maliyyə şərtlərini tapmağa kömək edəcəyik, vebsaytımızda sorğu buraxın və ən qısa zamanda sizinlə əlaqə saxlayacağıq.',
+  aboutText:
+    'ARION Azərbaycan komandası 2018-ci ildən Avropa istehsalı olan yük maşınlarının təmiri ilə bağlı xidmətlər bazarında çalışır. Mövcud olduğu müddətdə şirkət çətin formalaşma yolu keçmiş və özünü etibarlı və sabit təşkilat kimi təsdiq etmişdir. “ARİON” avtomobil yığımının yüksək səviyyəsi, servis xidməti, şirkət əməkdaşlarının peşəkarlığı, hər bir müştərinin ehtiyaclarına fərdi yanaşma, zəmanətli keyfiyyət və optimal qiymət/keyfiyyət nisbətidir. Biz bir yerdə dayanmırıq və təqdim etdiyimiz xidmətlərin çeşidini genişləndiririk. Bizim yeni istiqamətimiz: yeni yük maşınlarının, yük maşını traktorlarının, özüboşaltıcıların və ARION brendinin digər müxtəlif modellərinin yığılması və satışı. Zavod Azərbaycanın Şirvan şəhərində yerləşir. Avadanlıqlar satışa çıxarılıb və Bakı şəhərində yerləşir və artıq ilkin sifariş mövcuddur.',
+  contactsTitle: 'Sorğu göndər',
+  name: 'Ad',
+  surname: 'Soyad',
+  mail: 'E-poçt',
+  message: 'Mesaj',
+  send: 'Göndər',
+  reachUs: 'Bizimlə əlaqə saxlayın',
+  phone: 'Telefon',
+  allRightsReserved: 'Bütün hüquqlar qorunur',
 } as const;

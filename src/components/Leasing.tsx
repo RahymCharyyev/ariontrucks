@@ -1,19 +1,16 @@
+import { getI18n } from '@/locales/server';
 import Image from 'next/image';
 
-const Leasing = () => {
+const Leasing = async () => {
+  const t = await getI18n();
   return (
     <section
       id='leasing'
       className='flex flex-col gap-10 max-w-[1850px] mx-auto'
     >
-      <h2 className='text-center text-3xl font-bold'>Лизинг</h2>
+      <h2 className='text-center text-3xl font-bold'>{t('leasing')}</h2>
       <div className='flex flex-col gap-4 items-center'>
-        <div className='text-center'>
-          Лизинг предоставляет возможность эксплуатировать технику с минимальным
-          капиталовложением и сохранять средства на развитие бизнеса. Мы поможем
-          Вам подобрать выгодные условия финансирования, оставьте заявку на
-          нашем сайте и мы свяжемся с Вами в ближайшее время.
-        </div>
+        <div className='text-center'>{t('leasingText')}</div>
         <Image
           className='rounded-xl'
           src='/leasing.webp'

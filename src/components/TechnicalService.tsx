@@ -1,43 +1,40 @@
+import { getI18n } from '@/locales/server';
 import Image from 'next/image';
 
-const TechnicalService = () => {
+const TechnicalService = async () => {
+  const t = await getI18n();
   return (
     <section
       id='techService'
       className='flex flex-col gap-10 max-w-[1850px] mx-auto'
     >
       <h2 className='text-center text-3xl font-bold'>
-        Техническое обслуживание в центре «ARION»
+        {t('techServiceTitle')}
       </h2>
       <div className='flex flex-wrap justify-between'>
         <div className='flex-1'>
-          <p>
-            Вы можете произвести ремонт и техническое обслуживание на выгодных
-            условиях! Специалисты нашего сервисного центра обладают огромным
-            опытом и высокой квалификацией, что позволяет произвести
-            качественное техническое обслуживание экономя Ваше время и деньги.
-          </p>
-          <h2>Перечень основных работ по ТО автомобилей ARION:</h2>
+          <p>{t('techServiceText')}</p>
+          <h2>{t('techServiceFirstSubtitle')}</h2>
           <ul>
-            <li>- Замена моторного масла и фильтра двигателя</li>
-            <li>- Замена всех элементов топливных фильтров</li>
-            <li>- Замена фильтрующего элемента воздушного фильтра</li>
-            <li>- Замена фильтрующего элемента мочевины</li>
-            <li>- Замена патрона воздухосушителя</li>
-            <li>- Салонный фильтр, замена</li>
-            <li>- Осмотр транспортного средства</li>
-            <li>- Заполнение точек смазки шасси консистентной смазкой</li>
+            <li>{t('techServiceFirstList1')}</li>
+            <li>{t('techServiceFirstList2')}</li>
+            <li>{t('techServiceFirstList3')}</li>
+            <li>{t('techServiceFirstList4')}</li>
+            <li>{t('techServiceFirstList5')}</li>
+            <li>{t('techServiceFirstList6')}</li>
+            <li>{t('techServiceFirstList7')}</li>
+            <li>{t('techServiceFirstList8')}</li>
           </ul>
-          <h2>Перечень дополнительных работ:</h2>
+          <h2>{t('techServiceSecondSubtitle')}</h2>
           <ul>
-            <li>- Замена охлаждающей жидкости</li>
-            <li>- Регулировка клапанного зазора ДВС</li>
-            <li>- Замена масла коробки передач</li>
-            <li>- Замена фильтрующего элемента ретардера коробки передач</li>
-            <li>- Замена смазки передней ступицы</li>
-            <li>- Замена масла и фильтрующего элемента рулевого управления</li>
-            <li>- Замена тормозной жидкости сцепления</li>
-            <li>- Замена масла ведущего моста</li>
+            <li>{t('techServiceSecondList1')}</li>
+            <li>{t('techServiceSecondList2')}</li>
+            <li>{t('techServiceSecondList3')}</li>
+            <li>{t('techServiceSecondList4')}</li>
+            <li>{t('techServiceSecondList5')}</li>
+            <li>{t('techServiceSecondList6')}</li>
+            <li>{t('techServiceSecondList7')}</li>
+            <li>{t('techServiceSecondList8')}</li>
           </ul>
         </div>
         <Image

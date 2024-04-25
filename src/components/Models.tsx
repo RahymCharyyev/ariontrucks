@@ -1,12 +1,14 @@
+import { getI18n } from '@/locales/server';
 import Image from 'next/image';
 
-const Models = () => {
+const Models = async () => {
+  const t = await getI18n();
   return (
     <section
       id='models'
       className='max-w-[1850px] mx-auto flex flex-col gap-5 my-10'
     >
-      <h2 className='text-center text-3xl font-bold'>Модели</h2>
+      <h2 className='text-center text-3xl font-bold'>{t('models')}</h2>
       <div className='flex flex-wrap gap-5 justify-between'>
         <div className='overflow-hidden rounded-xl'>
           <Image

@@ -1,7 +1,9 @@
+import { getI18n } from '@/locales/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Footer = () => {
+const Footer = async () => {
+  const t = await getI18n();
   return (
     <footer className='bg-[#b91f27] py-5 px-10'>
       <div className='flex justify-between items-center'>
@@ -16,10 +18,18 @@ const Footer = () => {
           height={25}
         />
         <div>
-          <p className='text-white'>Связаться с нами:</p>
-          <p className='text-white'>Почта: ariontrucksaz@inbox.ru</p>
-          <p className='text-white flex gap-2 items-center'>
-            Телефон:
+          <p className='text-white'>{t('reachUs')}</p>
+          <Link
+            className='text-white hover:underline'
+            href={`mailto:ariontrucksaz@inbox.ru`}
+          >
+            {t('mail')}: ariontrucksaz@inbox.ru
+          </Link>
+          <Link
+            className='text-white flex gap-2 items-center hover:underline'
+            href={`tel:+994 55 2982929`}
+          >
+            {t('phone')}:
             <Image
               src='/whatsapp_icon.svg'
               alt='whatsapp icon'
@@ -27,11 +37,11 @@ const Footer = () => {
               height={25}
             />
             +994 55 2982929
-          </p>
+          </Link>
         </div>
       </div>
       <p className='text-white text-center'>
-        Все права защищены © {new Date().getFullYear()}
+        {t('allRightsReserved')} © {new Date().getFullYear()}
       </p>
     </footer>
   );
