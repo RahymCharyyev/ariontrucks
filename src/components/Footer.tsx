@@ -4,9 +4,10 @@ import Link from 'next/link';
 
 const Footer = async () => {
   const t = await getI18n();
+
   return (
     <footer className='bg-[#b91f27] py-5 px-10'>
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-wrap justify-between items-center'>
         <Link href='/'>
           <Image src='/arion.png' alt='arion logo' width={150} height={35} />
         </Link>
